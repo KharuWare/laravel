@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/W95FA.otf) format("opentype"),
+        url(../fonts/w95fa.woff) format("woff"),
+        url(../fonts/w95fa.woff2) format("woff2");
+}
+
+body {
+background-color: #0102ac;
+font-family: 'Pixelated MS Sans Serif', monospace;
+font-size: 18px;
+color: #ffffff;
+}
+
+.error {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 17vh;
+}
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 68vh;
+}
+
+.msg {
+padding-left: 7.5vw;
+padding-right: 7.5vw;
+}
+
+p {
+text-align: center;
+}
+
+.continue {
+text-align: center;
+}
+
+.highlight {
+color: #0102ac;
+background-color: #acada8;
+padding: 3%;
+text-align: center;
+width: 10vw;
+}
+
+.btn {
+background-color: transparent;
+color: #ffffff;
+text-decoration: none;
+}
+
+.btn:hover {
+color: #acada8;
+}

@@ -1,0 +1,8 @@
+Different title-bar colors for each category
+Follow system with a special Followed only post sort
+Profile Editing (changing usernames,passwords and adding profile pictures + more)
+Error notifications (for stuff like log-in fails, and stuff like too long/short usernames / usernames already in use)
+Add usernames in the title-bar of the posts
+Public profiles
+15 posts per page, add pages
+customizable profiles (bio, themes, privacy, other links)
