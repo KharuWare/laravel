@@ -21,7 +21,7 @@ class PostController extends Controller
 
     public function postUpdate(Post $post, Request $request)
     {
-        if (auth()->user()->id === $post->user_id) {
+        if (auth()->user()->id !== $post->user_id) {
             return redirect('/');
         }
 
@@ -34,7 +34,7 @@ class PostController extends Controller
         $incomingFields['title'] = strip_tags($incomingFields['title']);
         $incomingFields['body'] = strip_tags($incomingFields['body']);
         $post->update($incomingFields);
-        return redirect('/');
+        return redirect('/posts');
     }
 
     public function getPost(Post $post)
@@ -48,9 +48,6 @@ class PostController extends Controller
         return view('user-posts', ['post' => $post]);
     } 
     }
-
-    
-
     public function editPost(Post $post)
     {
         if (auth()->user()->id !== $post->user_id) {
