@@ -63,7 +63,7 @@
     <div class="edit3">
             <div class="window centered-window" style="width: 38.9vw;">
                 <div class="title-bar">
-                    <div class="title-bar-text" style="font-size: 1em;">Account Settings</div>
+                    <div class="title-bar-text" style="font-size: 1em;">Account Settings (w.i.p.)</div>
                     <div class="title-bar-controls"></div>
                 </div>
                 <div class="window-body centered-window">

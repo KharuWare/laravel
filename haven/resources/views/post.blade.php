@@ -21,7 +21,7 @@
             </a>
                 <p style="word-wrap: break-word; font-size: 1em; max-height: 1em; overflow: hidden;">{{ $post->title }}</p>
                 <p style="word-wrap: break-word; line-height: 1em; max-height: 8em; overflow: hidden;">{{ $post->body }}</p>
-                <a href="/edit-post/{{ $post->id }}" class="button">Edit / Delete</a>         
+                <a href="/post-edit/{{ $post->id }}" class="button">Edit / Delete</a>         
             </div>
     </div>
     

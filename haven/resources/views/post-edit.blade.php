@@ -16,8 +16,8 @@
             <div class="title-bar-controls">
             </div>
         </div>
-        <div class="window-body centered-window" style="height: 68vh;">
-            <form action="/edit-post/{{ $post->id }}" method="post">
+        <div class="window-body centered-window">
+            <form action="/post-edit/{{ $post->id }}" method="post">
                 @csrf
                 @method('put')
             <p>Title</p>
@@ -26,6 +26,11 @@
                 <div><textarea name="body" style="height: 50vh; width: 50vw; overflow: hidden; resize: none;">{{ $post->body }}</textarea></div>
             <button style="margin-top: 2vh;">Submit</button>
         </form>
+        <form action="/post-edit/{{ $post->id }}" method="post">
+                    @csrf
+                    @method('delete')
+                    <button>Delete</button>
+                </form>
         </div>
     </div>
 

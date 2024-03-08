@@ -61,6 +61,9 @@ Route::get('/posts', function () {
 // Post routes
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::get('/post/{post}', [PostController::class, 'getPost']);
-Route::get('/edit-post/{post}', [PostController::class, 'editPost']);
-Route::put('/edit-post/{post}', [PostController::class, 'postUpdate']);
-Route::delete('/delete-post/{post}', [PostController::class, 'postUpdate']); 
+Route::get('/post-edit/{post}', [PostController::class, 'editPost']);
+Route::put('/post-edit/{post}', [PostController::class, 'postUpdate']);
+Route::delete('/post-edit/{post}', [PostController::class, 'deletePost']);
+
+// User routes
+

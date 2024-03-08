@@ -67,7 +67,7 @@
                         {{ $post->title }}
                     </td>
                     <td>
-                        <a href="/edit-post/{{ $post->id }}" class="button">Edit</a>
+                        <a href="/post-edit/{{ $post->id }}" class="button">Edit</a>
                     </td>
                 </tr>
                 @endif

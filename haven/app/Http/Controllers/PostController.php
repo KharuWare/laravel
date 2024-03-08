@@ -9,14 +9,14 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     
-    public function postDelete(Post $post)
+    public function deletePost(Post $post)
     {
         if (auth()->user()->id === $post->user_id) {
             $post->delete();
-            return redirect('/');
+            return redirect('/posts');
         }
 
-        return redirect('/');
+        return redirect('/posts');
     }
 
     public function postUpdate(Post $post, Request $request)
@@ -54,7 +54,7 @@ class PostController extends Controller
             return redirect('/');
         }
 
-        return view('edit-post', ['post' => $post]);
+        return view('post-edit', ['post' => $post]);
     }
     public function createPost(Request $request)
     {
