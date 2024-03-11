@@ -33,14 +33,14 @@
 
 
     @else
-        <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
-        <div>
-            <div class="window" centered-window style="width: 16vw;">
-                <div class="title-bar">
-                    <div class="title-bar-text">Sign Up!</div>
-                    <div class="title-bar-controls"></div>
-                </div>
-                <div class="window-body centered-window">
+<div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
+    <div class="window" centered-window style="width: 20vw;">
+        <div class="title-bar">
+            <div class="title-bar-text">Sign Up!</div>
+            <div class="title-bar-controls"></div>
+        </div>
+        <div class="window-body centered-window" style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column;">
                 @if ($errors->any())
                     <div style="color: red;">
                         <ul>
@@ -50,23 +50,26 @@
                         </ul>
                     </div>
                 @endif
-
                 <form action="/register" method="post">
                     @csrf
-                    <div class="field-row-stacked" style="width: 10vw">
+                    <div class="field-row-stacked" style="width: 10vw;">
                         <input name="name" type="text" placeholder="Name">
                         <input name="email" type="text" placeholder="Email">
                         <input name="password" type="password" placeholder="Password">
                         <input name="password_confirmation" type="password" placeholder="Confirm Password">
-                        <button style="width: 4vw">Sign Up</button>
+                        <button style="width: 4vw;">Sign Up</button>
                         <p>Already have an account?<br>
                         <a href="/login">Log in!</a></p>
                     </div>
                 </form>
             </div>
+            <div style="display: flex; flex-direction: column; align-items: center; padding-left: 1vw;">
+                <img src="https://kharua.xyz/img/placeholder.png" alt="PLACEHOLDER" style="margin-bottom: 1vh; height: 17vh;">
+                <a href="/"><button class="btn btn-primary">Placeholder</button></a>
+            </div>
         </div>
     </div>
-        
+</div>
     @endauth
 </body>
 

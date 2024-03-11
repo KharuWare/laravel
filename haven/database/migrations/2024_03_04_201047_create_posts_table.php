@@ -20,6 +20,9 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->longText('body');
             $table->foreignId('user_id')->constrained();
+            $table->unsignedInteger('comments_count')->default(0);
+            $table->unsignedInteger('likes_count')->default(0);
+            $table->string('category')->nullable();
         });
     }
 
