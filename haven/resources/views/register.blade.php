@@ -17,7 +17,7 @@
                 <div class="title-bar-controls"></div>
             </div>
             <div class="window-body centered-window">
-            <img src="https://placehold.co/197" alt="PLACEHOLDER" style="margin-bottom: 1vh;">
+            <img src="https://kharua.xyz/img/Placeholder.png" alt="PLACEHOLDER" style="margin-bottom: 1vh; height: 32.8vh;">
             <p>Logged in as {{ Auth::user()->name }}</p>
                 <div style="display: flex;">
                     <a href="/posts"><button class="btn btn-primary" style="margin-bottom: 1vh;">Continue</button></a>
