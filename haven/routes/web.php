@@ -64,6 +64,7 @@ Route::get('/post/{post}', [PostController::class, 'getPost']);
 Route::get('/post-edit/{post}', [PostController::class, 'editPost']);
 Route::put('/post-edit/{post}', [PostController::class, 'postUpdate']);
 Route::delete('/post-edit/{post}', [PostController::class, 'deletePost']);
+Route::post('/delete-account', [UserController::class, 'deleteAccount']);
 
 // User routes
 

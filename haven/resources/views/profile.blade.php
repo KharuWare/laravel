@@ -26,31 +26,13 @@
                         <li>Under Construction</li>
                     </ul>
                 </fieldset>
-
                 <fieldset>
-    <legend>Your Posts</legend>
-    <div class="sunken-panel" style="height: 20vh; width: 12.8vw;">
-        <table class="interactive">
-            <thead>
-                <tr>
-                    <th style="width: 11vw; max-width: 11vw;">Name</th>
-                    <th style="width: 2vw; max-width: 2vw;">Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="max-width: 7vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                        PlaceHolder
-                    </td>
-                    <td>
-                        <a class="button">Edit</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</fieldset>
-                
+                        <legend>Your Friends</legend>
+                        <ul class="tree-view" style="height: 11vh">
+                            <li><span class="status-circle online"></span><a href="/profile" style="color:darkviolet">Online Friend</a></li>
+                            <li><span class="status-circle offline"></span><a href="/profile" style="color:darkviolet">Offline Friend</a></li>
+                        </ul>
+                    </fieldset>
                 <fieldset>
                     <legend>Navigation (W.I.P)</legend>
                     <ul class="tree-view" style="height: 11vh">

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    @auth
+@auth
     <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
         <div class="window" centered-window style="width: 16vw;">
             <div class="title-bar">
@@ -17,7 +17,7 @@
                 <div class="title-bar-controls"></div>
             </div>
             <div class="window-body centered-window">
-            <img src="https://placehold.co/197" alt="PLACEHOLDER" style="margin-bottom: 1vh;">
+            <img src="https://kharua.xyz/img/placeholder.png" alt="PLACEHOLDER" style="margin-bottom: 1vh; height: 32.8vh;">
             <p>Logged in as {{ Auth::user()->name }}</p>
                 <div style="display: flex;">
                     <a href="/posts"><button class="btn btn-primary" style="margin-bottom: 1vh;">Continue</button></a>
@@ -41,19 +41,29 @@
                         <div class="title-bar-controls"></div>
                     </div>
                     <div class="window-body centered-window">
-                        <form action="/login" method="post">
-                            @csrf
-                            <div class="field-row-stacked" style="width: 10vw">
-                                <input name="logname" type="text" placeholder="Name">
-                                <input name="logpassword" type="password" placeholder="Password">
-                                <button style="width: 4vw">Log In</button>
-                                <p>Don't have an account?<br>
-                                <a href="/register">Sign up!</a></p>
-                            </div>
-                        </form>
-                    </div>
+                    @if ($errors->any())
+                        <div style="color: red;">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form action="/login" method="post">
+                        @csrf
+                        <div class="field-row-stacked" style="width: 10vw">
+                            <input name="logname" type="text" placeholder="Name">
+                            <input name="logpassword" type="password" placeholder="Password">
+                            <button style="width: 4vw">Log In</button>
+                            <p>Don't have an account?<br>
+                            <a href="/register">Sign up!</a></p>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
     @endauth
 </body>
 

@@ -82,7 +82,10 @@
                     </fieldset>
                     <fieldset>
                         <legend>Delete Account</legend>
-                        <button style="width: 8vw">Delete</button>
+                        <form action="/delete-account" method="post">
+                        @csrf
+                        <button type="submit">Delete Account</button>
+                        </form>
                     </fieldset>
                     <fieldset>
                         <legend>Save Changes</legend>
