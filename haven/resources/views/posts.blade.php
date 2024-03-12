@@ -95,7 +95,7 @@
                     <div class="layout-grid-2">
                     @foreach ($posts as $post)
                         <div class="window centered-window">
-                            <div class="title-bar">
+                            <div class="title-bar {{ \App\Http\Controllers\PostController::getCategoryClass($post->category) }}">
                                 <div class="title-bar-text" style="font-size: 1em;">{{ $post->user->name }}</div>
                                 <div class="title-bar-controls">
                                 </div>

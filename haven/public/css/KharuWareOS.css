@@ -92,6 +92,27 @@ button::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]:
 	justify-content:space-between;
 	padding:3px 2px 3px 3px
 }
+
+.title-bar.category-Technology {
+    background: linear-gradient(90deg, #3c881e, #2b41be);
+}
+
+.title-bar.category-Gaming {
+    background: linear-gradient(90deg, #8eb620, #38243a);
+}
+
+.title-bar.category-Music {
+	background: linear-gradient(90deg, #e6b220, #e62020);
+}
+
+.title-bar.category-Art {
+	background: linear-gradient(90deg, #967f7f, #2b220a);
+}
+
+.title-bar.category-Off-Topic {
+	background: linear-gradient(90deg, #39fae0, #104710);
+}
+
 .title-bar.inactive{
 	background:linear-gradient(90deg,grey,#b5b5b5)
 }

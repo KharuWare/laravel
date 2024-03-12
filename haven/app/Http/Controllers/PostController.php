@@ -38,6 +38,24 @@ class PostController extends Controller
         return redirect('/posts');
     }
 
+    public static function getCategoryClass($category)
+    {
+        switch ($category) {
+            case 'Technology':
+                return 'category-Technology';
+            case 'Gaming':
+                return 'category-Gaming';
+            case 'Music':
+                return 'category-Music';
+            case 'Art':
+                return 'category-Art';
+            case 'Off-Topic':
+                return 'category-Off-Topic';
+            default:
+                return '';
+        }
+    }
+
     public function getPost(Post $post)
     {
         return view('post', ['post' => $post]);
