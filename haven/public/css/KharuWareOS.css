@@ -98,19 +98,19 @@ button::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]:
 }
 
 .title-bar.category-Gaming {
-    background: linear-gradient(90deg, #ff4500, #ffa500);
+    background: linear-gradient(90deg, #CC2936, #FF7E89);
 }
 
 .title-bar.category-Music {
-    background: linear-gradient(90deg, #9933ff, #cc00cc);
+    background: linear-gradient(90deg, #601c86, #B168FF);
 }
 
 .title-bar.category-Art {
-    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    background: linear-gradient(90deg, #E6AF2E, #ffd36d); 
 }
 
 .title-bar.category-Off-Topic {
-    background: linear-gradient(90deg, #00ff00, #00b300);
+    background: linear-gradient(90deg, #2B2F2D, #565A58);
 }
 
 .title-bar.inactive{
