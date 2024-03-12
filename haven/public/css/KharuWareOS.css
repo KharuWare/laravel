@@ -94,23 +94,23 @@ button::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]:
 }
 
 .title-bar.category-Technology {
-    background: linear-gradient(90deg, #3c881e, #2b41be);
+    background: linear-gradient(90deg, #007bff, #00cccc);
 }
 
 .title-bar.category-Gaming {
-    background: linear-gradient(90deg, #8eb620, #38243a);
+    background: linear-gradient(90deg, #ff4500, #ffa500);
 }
 
 .title-bar.category-Music {
-	background: linear-gradient(90deg, #e6b220, #e62020);
+    background: linear-gradient(90deg, #9933ff, #cc00cc);
 }
 
 .title-bar.category-Art {
-	background: linear-gradient(90deg, #967f7f, #2b220a);
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
 }
 
 .title-bar.category-Off-Topic {
-	background: linear-gradient(90deg, #39fae0, #104710);
+    background: linear-gradient(90deg, #00ff00, #00b300);
 }
 
 .title-bar.inactive{
