@@ -29,6 +29,7 @@ class PostController extends Controller
         $incomingFields = $request->validate([
             'title' => ['required', 'max:30'],
             'body' => ['required', 'max:1000'],
+            'category' => 'required|string|in:Technology,Gaming,Music,Art,Off-Topic',
         ]);
 
         $incomingFields['title'] = strip_tags($incomingFields['title']);
@@ -57,16 +58,23 @@ class PostController extends Controller
         return view('post-edit', ['post' => $post]);
     }
     public function createPost(Request $request)
-    {
-        $incomingFields = $request->validate([
-            'title' => 'required',
-            'body' => 'required'
-        ]);
+{
+    $validatedData = $request->validate([
+        'title' => 'required',
+        'body' => 'required',
+        'category' => 'nullable|string|in:Technology,Gaming,Music,Art,Off-Topic',
+    ]);
 
-        $incomingFields['title'] = strip_tags($incomingFields['title']);
-        $incomingFields['body'] = strip_tags($incomingFields['body']);
-        $incomingFields['user_id'] = auth()->id();
-        Post::create($incomingFields);
-        return redirect('/posts');
-    }
+    $validatedData['title'] = strip_tags($validatedData['title']);
+    $validatedData['body'] = strip_tags($validatedData['body']);
+
+    $post = new Post();
+    $post->title = $validatedData['title'];
+    $post->body = $validatedData['body'];
+    $post->category = $validatedData['category'];
+    $post->user_id = auth()->id();
+    $post->save();
+
+    return redirect('/posts');
+}
 }

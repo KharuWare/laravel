@@ -34,7 +34,7 @@
 
     @else
 <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
-    <div class="window" centered-window style="width: 20vw;">
+    <div class="window" centered-window style="width: 20.5vw;">
         <div class="title-bar">
             <div class="title-bar-text">Sign Up!</div>
             <div class="title-bar-controls"></div>
